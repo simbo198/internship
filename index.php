@@ -15,9 +15,13 @@
 <body>
 <div class="contentCenter">
     <?php
+    function fact($num){
+        if($num>1) return $num*fact($num-1);
+        return $num;
+    }
     if(!empty($_POST['num1']) && !empty($_POST['num2'])){
     $res = $_POST["num1"] + $_POST["num2"];
-    echo $_POST['num1'].'+'.$_POST['num2']."=".$res;
+    echo "(".$_POST['num1'].'+'.$_POST['num2'].")!=".fact($res);
 }
 ?>
     <form action="index.php" method="post">
