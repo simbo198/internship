@@ -1,0 +1,23 @@
+.formInput{
+    display:block;
+    margin-bottom: 10px;
+}
+.contentCenter{
+    display:block;
+    height: 100%;
+    width: 200px;
+    margin:auto;
+    text-align: center;
+}
+input[type=submit]{
+    width:100%;
+    height: 40px;
+    border-radius: 5px;
+
+}
+input{
+    background-color:#F4FAFC;
+}
+body{
+    background-color: #FFEBD7;
+}
